@@ -46,7 +46,7 @@ void mergeSort(int arr[], int f, int l)
 {
   if (f < l)
    {
-    int m = f + (l - l) / 2;
+    int m = f + (l - f) / 2;
     mergeSort(arr, f, m);
     mergeSort(arr, m + 1, l);
     merge(arr, f, m, l);
